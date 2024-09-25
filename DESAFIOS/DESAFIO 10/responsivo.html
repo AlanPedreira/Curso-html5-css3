@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*320px é a largura da tela de um celular dos antigos deve ser usada para atender as especificações*/
+            max-width: 800px;
+            margin: auto; /* Esta configuração faz com que tudo se centralize automaticamente*/
+
+        }
+
+        img {
+            width: 100%; /* Esta configuração mantem a imagem inteira até passar para imagem menor*/
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Testando Responsividade</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor perspiciatis nobis minima aut soluta corporis impedit natus atque ratione veritatis dolores voluptates eaque repudiandae, sint doloribus minus enim? Ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam molestias at consectetur, officia rerum aut tenetur, ratione ipsum alias ipsam voluptates voluptatem maiores inventore ad libero ut natus modi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed inventore officia nostrum, exercitationem voluptates dicta minima quae, ex esse magni error recusandae fuga. Delectus quae, ducimus quaerat quo quis voluptatem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus voluptatem ea vero! Laborum, magnam praesentium natus architecto nostrum voluptates veritatis eligendi vel consequuntur harum odit quae earum illum velit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, quam sint ipsum animi ut, itaque facilis beatae, magnam quis laudantium quaerat saepe sapiente! Odio ipsa ipsam ducimus vitae ut explicabo.
+        </p>
+
+        <picture>
+            <source media="(max-width: 600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolor perspiciatis nobis minima aut soluta corporis impedit natus atque ratione veritatis dolores voluptates eaque repudiandae, sint doloribus minus enim? Ex?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam molestias at consectetur, officia rerum aut tenetur, ratione ipsum alias ipsam voluptates voluptatem maiores inventore ad libero ut natus modi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed inventore officia nostrum, exercitationem voluptates dicta minima quae, ex esse magni error recusandae fuga. Delectus quae, ducimus quaerat quo quis voluptatem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus voluptatem ea vero! Laborum, magnam praesentium natus architecto nostrum voluptates veritatis eligendi vel consequuntur harum odit quae earum illum velit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, quam sint ipsum animi ut, itaque facilis beatae, magnam quis laudantium quaerat saepe sapiente! Odio ipsa ipsam ducimus vitae ut explicabo.
+        </p>
+    </main>
+</body>
+</html>

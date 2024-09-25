@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  Seletores personalizados
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children ou filho      
+        */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        a:active { /* Quando tiver ":" uma vez dois pontos, temos uma pseudo-classe*/
+            color: yellow;
+            
+        }
+
+        a::after { /* Quando tivermos "::" duas vezes dois pontos, temos um pseudo-elemento */
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: lightgray;
+            font-size: 15px;
+        }
+
+        .especial {
+            background-color: yellow;
+        }
+
+        .especial::before {
+            content:  ' \002721 ';
+            font-size: 20px;
+            color: red;
+        }
+        
+        .especial::after {
+            content: '\002721 ';
+            font-size: 20px;
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.b3.com.br">Repositório GiHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial"> Canal do Youtube </a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em vídeo</a></li>
+        
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+           background-color: black;
+           font-family: 'Courier New', Courier, monospace;
+           font-size: 20px;
+           color: white; 
+        }
+
+        div > p { /* o sinal ">" maior que, indica que o parágrafo está dentro da "DIV" e não é afetado pelas outras configurações*/
+            display: none;
+        }
+
+        div:hover{
+            color: rgb(4, 252, 4);
+        }
+
+        div:hover > p {
+            display: block;
+            color: red;
+            background-color: lightgray;
+            width: 500px;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi sapiente harum adipisci soluta maiores voluptates. Enim totam, eum rem exercitationem tempora maxime sit sequi architecto? Animi ipsam omnis nihil cupiditate.</p>
+        
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    
+    <p>Este vídeo está hospedado no meu proprio servidor.</p>
+    <video width="800" height="400" poster="imagens/surf.png" controls loop>
+        <source src="midia/Surf-25Fps-1.webm" type="video/webm">
+        <source src="midia/Surf-25Fps-1.mp4" type="video/mp4">
+        <source src="midia/Surf-25Fps-1.mkv" type="video/mkv">
+        <source src="midia/Surf-25Fps-1.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos!</p>
+        <!--Quando usamos hospedagem própria precisamos colocar o maior número de formatos de vídeo possível, por causa da compatibilidade dos sites -->
+    </video>
+
+    <h1>Inserindo vídeo do youtube</h1>
+    
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/YLf7fstK9nU?si=-qBv9jKlnfk0pWKD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Incorporando vídeo do vimeo</h1>
+    
+    <iframe src="https://player.vimeo.com/video/528884659?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="800" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Donna Missal - Sex is Good (but have you tried)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>></iframe>
+    
+</body>
+</html>

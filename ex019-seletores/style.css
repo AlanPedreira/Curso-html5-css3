@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*
+    em HTML é 'id'     =  em CSS e '#' (só pode ter um elemento por página)
+    em HTML é 'class'  =  em CSS é '.' (pode varios elementos por página)
+
+*/
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 30px;
+    
+}
+
+h1 {
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+}
+
+h1#principal { /* tudo que em HTML for 'id' em CSS e '#' */ /* pode ser usado também "#principal" sem o h1 */
+    text-align: center;
+    background-color: black;
+    color: lime;
+}
+
+h2 {
+    color: rgb(24, 24, 46);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.basico{
+    color: rgb(47, 47, 139);
+    text-decoration: underline;
+}
+
+.intermediario{
+    color: rgb(9, 30, 223);
+}
+
+.avançado{
+    color: rgb(238, 7, 207);
+    text-decoration: underline;
+}
+
+.destaque{
+    background-color: yellow;
+}
+
+div {
+    box-sizing: border-box;
+}

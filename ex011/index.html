@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!--Sempre devemos colocar ("max"-width) e sempre da menor para maior imagem-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Sempre devemos colocar aproximadamente 50px a mais que o tamanho da foto Ex: (foto = 1000px colocar 1050px)-->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir áudio!</p>
+    <audio src="midia/08. Howling At The Moon (Sha-La-La).mp3" controls></audio><p><b>Howling At The Moon</b></p>
+
+    <h1>Outra maneira</h1>
+    <audio preload="metadata" controls>
+        <source src="midia/08. Howling At The Moon (Sha-La-La).mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio! </p>
+    </audio>
+    <a href="midia/08. Howling At The Moon (Sha-La-La).mp3">Clique para baixar o arquivo mp3</a>
+
+</body>
+</html>

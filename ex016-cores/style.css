@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30;
+   
+}
+
+body {
+    background-image: linear-gradient(to right, #B8B68F, #DBD3C6);
+}
+
+main {
+    background-color: white;
+    width: 1000px; /* Largura do quadro*/
+    padding: 20px; /* Margem ao redor do quadro*/
+    margin: auto; /* Centraliza o quadro na página automaticamente*/
+    border-radius: 20px; /* Arredonda as bordas do quadro*/
+    box-shadow: 10px 10px 15px rgba(0, 0, 255, 0.555); /* Configura uma sombra no quadro*/
+}
+
+h1 {
+    color: #e4c074;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+h2 {
+    color: #000000;
+    text-shadow: 2px 2px 3px rgb(224, 144, 144);
+}
+
+p {
+    text-align: justify;
+}
+

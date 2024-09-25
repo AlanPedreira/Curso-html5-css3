@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: lime;
+            background-color: white;
+        }
+        header{
+            border: 2px solid red;
+            padding: 20px;
+            margin: auto;
+            background-color: white;
+        }
+
+        nav{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            box-shadow: 5px 5px 8px 2px rgb(0, 0, 0); /* aplica a sombra da caixa*/ /*Usar o DevTools do chrome para configurar as sombras*/        
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: black;
+            border: 2px solid red;
+            padding: 5px;
+            border-radius: 0px 30px; /* Cria bordas arredondadas nas caixas*/
+        }
+
+        section{
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        section > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px; 
+        }
+
+        article{
+            background-color: aqua;
+            padding: 5px;
+            color: black;
+        }
+
+        article > aside{
+            background-color: aquamarine;
+            color: black;
+        }
+
+        aside{
+            text-align: right;
+            padding: 3px;
+            margin: 2px;        
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+            padding: 2px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: bisque;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tudo Aqui!</h1>
+        <nav>
+            <a href="farmacia.html" target="_blank">Farmácia</a>
+            <a href="#">Padaria</a>
+            <a href="#">Supermercado</a>
+            <a href="#">Ferragens e Bazar</a>
+            <a href="#">Autopeças</a>
+            <a href="#">Petshop</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="#">Esportes</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Ateoria da conspiração não é uma teoria</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ea molestias perspiciatis! Voluptas vel dolore dolores fugit excepturi adipisci! Repudiandae repellendus doloribus, quo corporis odit cumque alias totam optio veritatis.
+                </p>
+                <aside>
+                    <p>Artigo escrito por mim</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola">
+
+    </div>    
+</body>
+</html>
