@@ -56,7 +56,11 @@ section {
     line-height: 2em; /* Este parâmetro acrescenta espaçamento duplo nas linha, como se fosse o parágrafo do word*/
     padding-left: 50px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 2.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -67,12 +71,26 @@ section.normal {
 section.imagem {
     background-color: darkcyan;
     color: white;
+    box-shadow: inset 6px 6px 13px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block; /* Este parâmetro ajusta a caixa automáticamente ao conteúdo da section quando o navegador diminui a largura*/
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.514);
     padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer {
