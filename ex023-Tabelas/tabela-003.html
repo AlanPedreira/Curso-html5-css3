@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABELAS COM MUITOS DADOS</title>
     <style>
-        h1 {
-            
-        }
-        
+       
         body {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 25px;
+            font-family:Arial, Helvetica, sans-serif;
+           
         }
 
         table {
             width: 500px;
-            height: 120px;
-            padding: 10px;
             border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
             border: 2px solid darkgreen;
-            text-align: left;
             padding: 10px;
         }
 
         thead, tfoot {
-            background-color: greenyellow;
-            color: rgb(0, 0, 0);
+            background-color: black;
+            color: white;
+            text-align: center;
         }
 
         td.num {
@@ -49,12 +51,22 @@
             TFOOT (roda pé)
                 TR, TD, TH
     -->
+    
+    <!-- 
+    
+        SIGNIFICADOS
+
+            tr -> table row (linha de tabela)
+            th -> table header (cabeçalho da tabela)
+            td -> table data (dados da tabela)
+    -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>               
-                <th>População</th>
+                <th scope="col">Estado</th>               
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -169,7 +181,7 @@
 
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num"><strong>212 583 720</strong></td>
         </tfoot>
     </table>
