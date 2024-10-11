@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo de iFrame</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 200px;
+            border: 2px solid darkblue;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iFrame</h1>
-    <p>Acessando o site do Curso em Vídeo para aprender a Programar.</p>
+   
+    <!-- Por padrão o tamanha de um iFrame é de 300px x 150px, mas pode ser configurado manualmente como abaixo, no entanto a configuração do CSS é a que prevalesse -->
+
+    <!-- O Parâmetro "SCOLLING" serve para criar barras de rolagem, podendo ser configurado como (auto, yes e no)-->
+
+    <!-- ) Parâmetro "frameborder" só aceita as configurações 0 e 1, porém a borda pode ser configurada no CSS normalmente -->
+
+    <p>Acessando o site do <iframe src="https://cursoemvideo.com" frameborder="0" width="600px" height="300px" scolling="auto"></iframe> para aprender a Programar.</p>
+
+   
 </body>
 </html>
