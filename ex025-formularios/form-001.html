@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.py" autocomplete="off"> <!-- a função autocomplete="off" desliga o popup de sugestão de autocompletar.-->
+        <p><label for="iNome">Nome:</label>
+            <!-- o parâmetro nome é mais importante para o PHP, já o parâmentro ID é mais importante para o Java Script--> 
+            <input type="text" name="Nome" id="iNome"></p> 
+        <p><label for="iSobrenome">Sobrenome:</label> <!-- O label cria uma relação entre o nome e o campo do form-->
+            <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
